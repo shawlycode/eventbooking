@@ -19,6 +19,7 @@ import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 import { useState } from "react";
+import video from "../../assets/video.mp4";
 
 const Header = () => {
   const [openDate, setOpenDate] = useState(false);
@@ -31,6 +32,7 @@ const Header = () => {
   ]);
   return (
     <div className="header">
+      <video src={video} className="video-bg" autoPlay muted loop></video>
       <div className="headerContainer">
         <div className="headerList ">
           <div className="headerItems active">
